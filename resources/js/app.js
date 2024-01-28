@@ -1,7 +1,18 @@
-import './bootstrap';
+require('./bootstrap');
 
-import Alpine from 'alpinejs';
+import Vue from 'vue';
+import Vuetify from 'vuetify';
+import 'vuetify/dist/vuetify.min.css';
+import colors from 'vuetify/es5/util/colors';
 
-window.Alpine = Alpine;
+Vue.use(Vuetify);
+import FirstVue from './components/FirstVue.vue';
 
-Alpine.start();
+new Vue({
+    el: '#app',
+    vuetify: new Vuetify(),
+    components: {
+        FirstVue,
+    },
+})
+export default app;

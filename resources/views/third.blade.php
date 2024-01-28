@@ -1,6 +1,7 @@
 @extends('second')
 @section('seccontent')
-<h1>
-    Third Page
-</h1>
+<div id="app">
+    <first-vue>
+    </first-vue>
+</div>
 @endsection
